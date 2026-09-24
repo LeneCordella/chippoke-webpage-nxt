@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Home",
+    "description": "Welcome to my webpage!",
+    "content": "This is the home page of my personal website. Here you can find information about me and my projects."
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "Learn more about me.",
+    "content": "This page provides information about my background, skills, and experiences."
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Check out my projects.",
+    "content": "This page showcases my recent projects and contributions."
+  }
+}
