@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 const locales = [
@@ -10,11 +11,26 @@ const locales = [
 export default function LanguageSelector() {
   const pathname = usePathname();
   const router = useRouter();
+  const [activeLocale, setActiveLocale] = useState("pt-br");
+
+  useEffect(() => {
+    const cookieLocale = document.cookie
+      .split("; ")
+      .find((item) => item.startsWith("locale="));
+
+    if (cookieLocale) {
+      const locale = cookieLocale.split("=")[1];
+      setActiveLocale(locale || "pt-br");
+      return;
+    }
+
+    setActiveLocale("pt-br");
+  }, []);
 
   const handleChange = (locale) => {
+    setActiveLocale(locale);
     document.cookie = `locale=${locale}; path=/; max-age=${60 * 60 * 24 * 365}`;
     router.refresh();
-    router.push(pathname || "/");
   };
 
   return (
@@ -23,7 +39,7 @@ export default function LanguageSelector() {
         <button
           key={locale.code}
           type="button"
-          className="language-option"
+          className={`language-option ${activeLocale === locale.code ? `active ${locale.code}` : ""}`}
           onClick={() => handleChange(locale.code)}>
           {locale.label}
         </button>

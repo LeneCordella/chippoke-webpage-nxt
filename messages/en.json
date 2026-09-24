@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "brand": "My Website",
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
   "HomePage": {
     "title": "Home",
     "description": "Welcome to my webpage!",

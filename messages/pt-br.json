@@ -1,4 +1,10 @@
 {
+  "Navbar": {
+    "brand": "Meu Site",
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos"
+  },
   "HomePage": {
     "title": "Home",
     "description": "Bem vindo(a) ao meu site!",
