@@ -1,4 +1,7 @@
 {
+  "MenuBar": {
+    "title": "Exibe apenas o texto quando há necessidade de um submenu"
+  },
   "Navbar": {
     "brand": "Meu Site",
     "home": "Início",

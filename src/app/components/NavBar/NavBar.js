@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import LanguageSelector from "./LanguageSelector";
+import LanguageSelector from "../LanguageSelector";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");

@@ -1,9 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/NavBar";
-import Footer from "./components/Footer";
-import PageContainer from "./components/PageContainer";
+import Navbar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
+import PageContainer from "./components/PageContainer/PageContainer";
 import { NextIntlClientProvider } from "next-intl";
+import MenuBar from "./components/MenuBar/MenuBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,10 @@ export default function RootLayout({ children }) {
       <body>
         <NextIntlClientProvider>
           <Navbar />
-          <PageContainer>{children}</PageContainer>
+          <div className="layout">
+            <MenuBar />
+            <PageContainer>{children}</PageContainer>
+          </div>
           <Footer />
         </NextIntlClientProvider>
       </body>
