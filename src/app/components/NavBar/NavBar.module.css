@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  min-width: 0;
+}
+
+.navbar-links:last-child {
+  margin-right: 0;
+}

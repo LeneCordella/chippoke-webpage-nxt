@@ -6,7 +6,8 @@
     "brand": "My Website",
     "home": "Home",
     "about": "About",
-    "projects": "Projects"
+    "projects": "Projects",
+    "login": "Login"
   },
   "HomePage": {
     "title": "Home",

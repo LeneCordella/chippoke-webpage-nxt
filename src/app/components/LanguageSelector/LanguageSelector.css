@@ -1,0 +1,35 @@
+.language-selector {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.language-option {
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  color: #333;
+  border-radius: 999px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.language-option.active.pt-br,
+.language-option.active.pt-br:hover {
+  background: #7b1e4a;
+  border-color: #7b1e4a;
+  color: #fff;
+}
+
+.language-option.active.en,
+.language-option.active.en:hover {
+  background: #1f5eff;
+  border-color: #1f5eff;
+  color: #fff;
+}
+
+.language-option:hover {
+  background: #efc1d9;
+}

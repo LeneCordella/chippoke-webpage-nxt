@@ -19,7 +19,6 @@ body {
 nav {
   display: flex;
   gap: 20px;
-  padding: 20px;
   background-color: #e85ea8;
 }
 
@@ -31,64 +30,6 @@ main {
   padding: 40px;
   flex: 1;
 }
-
-.navbar {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 30px;
-  flex: 1;
-  min-width: 0;
-}
-
-.language-selector {
-  display: flex;
-  gap: 8px;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-.language-option {
-  border: 1px solid #d0d0d0;
-  background: #fff;
-  color: #333;
-  border-radius: 999px;
-  padding: 6px 10px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  transition: all 0.2s ease;
-}
-
-.language-option.active.pt-br,
-.language-option.active.pt-br:hover {
-  background: #7b1e4a;
-  border-color: #7b1e4a;
-  color: #fff;
-}
-
-.language-option.active.en,
-.language-option.active.en:hover {
-  background: #1f5eff;
-  border-color: #1f5eff;
-  color: #fff;
-}
-
-.language-option:hover {
-  background: #efc1d9;
-}
-
 .layout {
   flex: 1; /* ocupa a altura que sobra e empurra o footer */
   display: flex; /* menubar e pagecontainer lado a lado */
@@ -100,14 +41,4 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
-}
-
-.footer {
-  width: 100%;
-  height: 6vh;
-  padding: 2px 8px;
-  border-top: 1px solid #ddd;
-  text-align: center;
-  justify-content: center;
-  background-color: #f9f9f9;
 }

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import styles from "./LanguageSelector.css";
 
 const locales = [
   { code: "pt-br", label: "PT-BR" },
